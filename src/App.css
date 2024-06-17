@@ -1,3 +1,103 @@
+#contenedor {
+  display: flex;
+  flex-grow: 1;
+  height: 70vh; /* Altura */
+  width: 100vw; /* Ancho */
+  background-image: url('01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; /* Necesario para posicionar elementos hijos absolutamente */
+}
+
+.texto {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  position: absolute; /* Posiciona este elemento dentro del contenedor */
+  color: #e03e8aec;
+  top: 40px; /* Ajusta según sea necesario */
+  left: 40px; /* Ajusta según sea necesario */
+  width: 90%;
+  height: 100px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  padding: 10px;
+  margin-top: 10px;
+}
+#parrafo {
+
+  display: flex;
+  flex-grow: 1;
+  position: absolute; /* Posiciona este elemento dentro del contenedor */
+  color: #e03e8aec;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 90px;
+  margin-top: 90px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #d875a35e; /* Color de fondo de la página */
+}
+
+.nav-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e22e82ec; /* Color de los enlaces por defecto */
+}
+
+.nav-link:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e03e8aec; /* Color de los enlaces al pasar el cursor */
+}
+
+.nav-link.active {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #0e0107ec; /* Color del enlace activo */
+}
+
+.nav-link.disabled {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e03e8aec /* Color del enlace deshabilitado */
+}
+
+  #caja{
+    flex-grow: 1;
+    display: flex;
+    object-fit: cover;
+    width: 500px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+  }
+  #contenedor2{
+    align-content: center;
+    font-size: large;
+    width: 900px;
+    height: 700px;
+    top: 40%;
+    left: auto;
+  }
+ 
+      #footer {
+        color: #d32e7bc9;
+        background-color: #f579b15e;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+#lista{
+  font-size: 2.25em;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos verticalmente */
+  align-items: flex-end; /* Alinea los elementos al extremo derecho */
+  
+  /* Puedes ajustar el margen para mover el contenedor completo */
+  margin: 140px auto;
+  
+  /* Ajustar el relleno para dar espacio interno */
+  padding: 100px;
+}
 .App {
   text-align: center;
 }
